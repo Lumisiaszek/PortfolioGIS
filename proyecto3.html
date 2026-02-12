@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucia Misiaszek | GIS Developer </title>
+    <link rel="icon" type="image/png" href="./assets/img/logo-03.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    
+    <div class="pagppal">
+        <div class="pagcontainer">
+        <nav class="header">
+            <a href="index.html">
+                <img src="./assets/img/logos_Mesa de trabajo 1.png" alt="logo-Gispers" class="logo">
+            </a>
+            
+            <div class="header-links">
+                <a href="index.html#proyectos">PROYECTOS</a>
+                <a href="index.html#contacto">CONTACTO</a>
+            </div>
+        </nav>
+
+            <div class="proyectosecc">
+                <div class="proyecto-izq">
+                    <div class="visualizador-contenedor">
+                            <div class="contenedor-mapas">
+                                <img src="./assets/img/proyecto3/captura1.PNG" alt="Proyecto 3" class="capa-mapa activa">
+                                <img src="./assets/img/proyecto3/captura2.PNG" alt="Proyecto 3" class="capa-mapa">
+                                <img src="./assets/img/proyecto3/captura3.PNG" alt="Proyecto 3" class="capa-mapa">
+                            </div>
+                            <button class="flecha-prev" onclick="cambiarImagen(-1)">❮</button>
+                            <button class="flecha-next" onclick="cambiarImagen(1)">❯</button>
+
+                            <div id="indicadores-puntos" class="puntos-contenedor"></div>
+                    </div>
+                </div>
+                        
+
+            <div class="proyecto-der">
+                <h2>GEORREFERENCIACION, GESTION Y ACTUALIZACIÓN CATASTRAL</h2>
+                <h3>Consejo Federal de Inversiones (CFI) - Municipios del Chaco</h3>
+                <p class="textolargo">
+                <strong>Etapa 1 | Procesamiento de Ortomosaicos VANT:</strong> Georreferenciación de las imágenes aéreas vinculándolas al Catastro Provincial del Chaco mediante puntos de control. Se realiza el proceso de corte y solape para generar un único mosaico continuo, preciso y ajustado.<br><br>
+                
+                <strong>Etapa 2 | Actualización de la Base Catastral:</strong> Digitalización y georreferenciación de la documentación municipal (planos de agrimensura, archivos CAD, PDFs y escaneos). Con esta información se actualizan los registros digitales, unificando los antecedentes con la cartografía actual.<br><br>
+                
+                <strong>Etapa 3 | Restitución Edilicia y Clasificación de Usos:</strong> Detección y dibujo de las superficies construidas sobre el terreno. Se clasifican las edificaciones según su uso, proporcionando al municipio la situación real del territorio para la correcta liquidación de tasas e impuestos inmobiliarios.
+                </p>
+
+                <div class="fichatecnica">                    
+                    <div class="ficha-item">
+                        <img src="./assets/img/softwareicon.png" alt="Icono Software" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Software y tecnologías:</strong> QGIS, AutoCAD, CivilCAD, GlobalMapper.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/dataset.png" alt="Icono Datasets" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Datasets:</strong> Ortomosaicos VANT, Cartografía Catastral (Chaco), Antecedentes Municipales (CAD/PDF), Capas Vectoriales de Restitución.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/locationicon.png" alt="Icono Ubicación" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Localidades:</strong> Colonia Popular, Coronel Du Graty, Fontana, Concepcion del Bermejo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>        
+
+       <footer class="footer-proyectos">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/luciamisiaszek/"><img src="./assets/img/readlinkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.behance.net/luciamisiaszek"><img src="./assets/img/redbehance.png" alt="Behance"></a>
+                    <a href="#"><img src="./assets/img/contacgmail.png" alt="Email"></a>
+                </div>
+                <p>© 2026 Misiaszek Lucía - Portfolio GIS</p>
+        </footer>
+    </div>    
+
+<div id="cursor-coords">00.000, 00.000</div>
+<script src="./cursor.js"></script>
+<script src="./carrusel.js"></script>
+</body>
+</html>

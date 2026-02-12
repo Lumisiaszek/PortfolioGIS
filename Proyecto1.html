@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucia Misiaszek | GIS Developer </title>
+    <link rel="icon" type="image/png" href="./assets/img/logo-03.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="pagppal">
+        <div class="pagcontainer">
+        <nav class="header">
+            <a href="index.html">
+                <img src="./assets/img/logos_Mesa de trabajo 1.png" alt="logo-Gispers" class="logo">
+            </a>
+            
+            <div class="header-links">
+                <a href="index.html#proyectos">PROYECTOS</a>
+                <a href="index.html#contacto">CONTACTO</a>
+            </div>
+        </nav>
+
+            <div class="proyectosecc">
+                <div class="proyecto-izq">
+                    <div class="visualizador-contenedor">
+                            <div class="contenedor-mapas">
+                                <img src="./assets/img/proyecto1/NBI_Departamentos.jpeg" alt="Proyecto 1" class="capa-mapa activa">
+                                <img src="./assets/img/proyecto1/A4 - BV Situacion Actual.jpg" alt="Proyecto 2" class="capa-mapa">
+                                <img src="./assets/img/proyecto1/A4 - CC Situacion ambiental + expansion.jpeg" alt="Proyecto 3" class="capa-mapa">
+                                <img src="./assets/img/proyecto1/A4 - MC Situacion Actual.jpg" alt="Proyecto 3" class="capa-mapa">
+                                <img src="./assets/img/proyecto1/A4 - MC Situacion Ambiental + expansion.jpeg" alt="Proyecto 3" class="capa-mapa">
+                                <img src="./assets/img/proyecto1/A4 - JP Situacion Actual.jpg" alt="Proyecto 3" class="capa-mapa">
+                            </div>
+                            <button class="flecha-prev" onclick="cambiarImagen(-1)">❮</button>
+                            <button class="flecha-next" onclick="cambiarImagen(1)">❯</button>
+
+                            <div id="indicadores-puntos" class="puntos-contenedor"></div>
+                    </div>
+                </div>
+                        
+
+            <div class="proyecto-der">
+                <h2>PROGRAMAS DE ACTUACION E INSTRUMENTOS DE DESARROLLO Y ORDENAMIENTO URBANO</h2>
+                <h3>Consejo Federal de Inversiones (CFI) - Municipios de Corrientes</h3>
+                <p>Como consultora, desarrollé cartografía base y
+                     diagnósticos territoriales mediante el procesamiento de
+                      datos vectoriales y ráster. Mi flujo de trabajo integró la búsqueda y 
+                      digitalización de fuentes primarias con la sistematización de datos cualitativos 
+                      recolectados en talleres participativos locales. Además, fui responsable de la elaboración 
+                     de una serie de manuales urbanos a entregar a los municipios comprendidos en el proyecto.</p>
+
+                <div class="fichatecnica">                    
+                    <div class="ficha-item">
+                        <img src="./assets/img/softwareicon.png" alt="Icono Software" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Software y tecnologías:</strong> QGIS, AutoCAD, Illustrator.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/dataset.png" alt="Icono Datasets" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Datasets:</strong> Capas vectoriales, imágenes satelitales, datos censales, talleres participativos.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/locationicon.png" alt="Icono Ubicación" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Localidades:</strong> Bella Vista, Saladas, Santa Rosa, Mocoretá, Curuzú Cuatiá y Juan Pujol.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="botones-infoproy">
+                    <a href="https://www.behance.net/gallery/186105557/Analisis-y-Diagnostico-Urbano-Corrientes" target="_blank" class="botoninfo">
+                        <img src="./assets/img/mapicon.png" alt="Cartografía" class="icono-btn">
+                        <span class="texto-boton">Cartografia Completa</span>
+                    </a>
+                    
+                    <a href="https://online.fliphtml5.com/GisDeveloper/CFI---Bella-Vista_compressed/" target="_blank" class="botoninfo">
+                        <img src="./assets/img/bookmanual.png" alt="Manual" class="icono-btn">
+                        <span class="texto-boton">Manual Urbano</span>
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>        
+
+       <footer class="footer-proyectos">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/luciamisiaszek/"><img src="./assets/img/readlinkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.behance.net/luciamisiaszek"><img src="./assets/img/redbehance.png" alt="Behance"></a>
+                    <a href="#"><img src="./assets/img/contacgmail.png" alt="Email"></a>
+                </div>
+                <p>© 2026 Misiaszek Lucía - Portfolio GIS</p>
+        </footer>
+    </div>    
+
+<div id="cursor-coords">00.000, 00.000</div>
+<script src="./cursor.js"></script>
+<script src="./carrusel.js"></script>
+</body>
+</html>

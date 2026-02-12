@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucia Misiaszek | GIS Developer </title>
+    <link rel="icon" type="image/png" href="./assets/img/logo-03.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <div class="pagppal">
+        <div class="pagcontainer">
+        <nav class="header">
+            <a href="index.html">
+                <img src="./assets/img/logos_Mesa de trabajo 1.png" alt="logo-Gispers" class="logo">
+            </a>
+            
+            <div class="header-links">
+                <a href="index.html#proyectos">PROYECTOS</a>
+                <a href="index.html#contacto">CONTACTO</a>
+            </div>
+        </nav>
+
+            <div class="proyectosecc">
+                <div class="proyecto-izq">
+                    <div class="visualizador-contenedor" style="height: 700px;">
+                        
+                        <div class="contenedor-mapas" style="height: 100%; width: 100%;">
+                            
+                            <div id="mapa-sit" style="height: 100%; width: 100%;"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                        
+
+            <div class="proyecto-der">
+                <h2>VISUALIZADOR SIT PARA LA GESTION INSTITUCIONAL Y TERRITORIAL</h2>
+                <h3>Subsecretaría de Ordenamiento Territorial - Ministerio de la Producción y del Desarrollo Económico Sostenible - Gobierno del chaco</h3>
+                <p>Ante la falta de acceso ágil a los datos procesados por el organismo se desarrolló, junto al equipo de trabajo, un visualizador geoespacial web que centraliza la información territorial y evita la duplicidad de tareas. Esta herramienta permite la consulta y análisis de datos desde cualquier navegador, eliminando la dependencia de software de escritorio y facilitando el acceso a usuarios tanto técnicos como administrativos.</p>
+
+                <div class="fichatecnica">                    
+                    <div class="ficha-item">
+                        <img src="./assets/img/softwareicon.png" alt="Icono Software" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Software y tecnologías:</strong> QGIS, AutoCAD/CivilCAD, GeoServer, Leaflet.js, PostgreSQL/PostGIS, Go/Gin, HTML/CSS/JS.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/dataset.png" alt="Icono Datasets" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Areas temáticas:</strong> Planificación territorial, planificación urbana, gestión integral del hábitat, mapas base.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/locationicon.png" alt="Icono Ubicación" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Alcance:</strong> Provincia del Chaco.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="botones-infoproy">
+                    <a href="https://online.fliphtml5.com/GisDeveloper/TIF_VisualizadorSIT_Misiaszek/" target="_blank" class="botoninfo">
+                        <img src="./assets/img/iconwebb.png" alt="Cartografía" class="icono-btn">
+                        <span class="texto-boton">Documento final</span>
+                    </a>
+                    
+                    <a href="https://sit.chaco.gob.ar/visualizador_baseambiental" target="_blank" class="botoninfo">
+                        <img src="./assets/img/iconlayers.png" alt="Manual" class="icono-btn">
+                        <span class="texto-boton">Manual de usuario</span>
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>        
+
+       <footer class="footer-proyectos">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/luciamisiaszek/"><img src="./assets/img/readlinkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.behance.net/luciamisiaszek"><img src="./assets/img/redbehance.png" alt="Behance"></a>
+                    <a href="#"><img src="./assets/img/contacgmail.png" alt="Email"></a>
+                </div>
+                <p>© 2026 Misiaszek Lucía - Portfolio GIS</p>
+        </footer>
+    </div>    
+
+<div id="cursor-coords">00.000, 00.000</div>
+<script src="./cursor.js"></script>
+<script src="./leafletsit.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucia Misiaszek | GIS Developer </title>
+    <link rel="icon" type="image/png" href="./assets/img/logo-03.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="pagppal">
+        <div class="pagcontainer">
+        <nav class="header">
+            <a href="index.html">
+                <img src="./assets/img/logos_Mesa de trabajo 1.png" alt="logo-Gispers" class="logo">
+            </a>
+            
+            <div class="header-links">
+                <a href="index.html#proyectos">PROYECTOS</a>
+                <a href="index.html#contacto">CONTACTO</a>
+            </div>
+        </nav>
+
+            <div class="proyectosecc">
+                <div class="proyecto-izq">
+                    <div class="visualizador-contenedor">
+                            <div class="contenedor-mapas">
+                                <img src="./assets/img/proyecto6/Analisis1.jpg" alt="Proyecto 1" class="capa-mapa activa">
+                                <img src="./assets/img/proyecto6/FODA1-07.jpg" alt="Proyecto 2" class="capa-mapa">
+                                <img src="./assets/img/proyecto6/FODA2-08.jpg" alt="Proyecto 2" class="capa-mapa">
+                                <img src="./assets/img/proyecto6/Propuesta1.jpg" alt="Proyecto 2" class="capa-mapa">
+                                <img src="./assets/img/proyecto6/Propuesta2.jpg" alt="Proyecto 2" class="capa-mapa">
+                            </div>
+                            <button class="flecha-prev" onclick="cambiarImagen(-1)">❮</button>
+                            <button class="flecha-next" onclick="cambiarImagen(1)">❯</button>
+
+                            <div id="indicadores-puntos" class="puntos-contenedor"></div>
+                    </div>
+                </div>
+                        
+
+            <div class="proyecto-der">
+                <h2>PLAN DE CONECTIVIDAD URBANA DE LA ZONA SUR DE RESISTENCIA</h2>
+                <h3>Tesis de Arquitectura - FAU UNNE</h3>
+                <p>El proyecto, enmarcado en un acuerdo con el Ministerio de Desarrollo Urbano y Ordenamiento Territorial de la Provincia del Chaco, consistió en la sistematización y procesamiento geoespacial 
+                    de información base de la ciudad de Resistencia, validada a través del trabajo de campo y el registro aéreo con drone. Esta base permitió realizar un diagnóstico preciso
+                      de la situación en la Zona Sur —apoyado en mapeos, indicadores estadísticos y matrices— para finalizar con una etapa
+                       propositiva centrada en estrategias de intervención y su desarrollo proyectual.</p>
+
+                <div class="fichatecnica">                    
+                    <div class="ficha-item">
+                        <img src="./assets/img/softwareicon.png" alt="Icono Software" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Software y tecnologías:</strong> QGIS, AutoCAD, Illustrator, Sketchup.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/dataset.png" alt="Icono Datasets" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Datasets:</strong> Capas vectoriales, imágenes satelitales, datos censales, registro áereo.
+                        </p>
+                    </div>
+
+                    <div class="ficha-item">
+                        <img src="./assets/img/locationicon.png" alt="Icono Ubicación" class="ficha-icon">
+                        <p class="ficha-textos">
+                            <strong>Escala:</strong> Zona sur de la ciudad de Resistencia, Provincia del Chaco, Argentina.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="botones-infoproy">
+                    <a href="https://www.behance.net/gallery/186022177/Plan-de-Conectividad-Urbana" target="_blank" class="botoninfo">
+                        <img src="./assets/img/mapicon.png" alt="Cartografía" class="icono-btn">
+                        <span class="texto-boton">Cartografia complementaria</span>
+                    </a>
+                    
+                    <a href="https://online.fliphtml5.com/GisDeveloper/gnfi/" target="_blank" class="botoninfo">
+                        <img src="./assets/img/bookmanual.png" alt="Manual" class="icono-btn">
+                        <span class="texto-boton">Ver documento</span>
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>        
+
+       <footer class="footer-proyectos">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/luciamisiaszek/"><img src="./assets/img/readlinkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.behance.net/luciamisiaszek"><img src="./assets/img/redbehance.png" alt="Behance"></a>
+                    <a href="#"><img src="./assets/img/contacgmail.png" alt="Email"></a>
+                </div>
+                <p>© 2026 Misiaszek Lucía - Portfolio GIS</p>
+        </footer>
+    </div>    
+
+<div id="cursor-coords">00.000, 00.000</div>
+<script src="./cursor.js"></script>
+<script src="./carrusel.js"></script>
+</body>
+</html>
