@@ -3,7 +3,6 @@ const contactLinks = document.querySelectorAll('.contacto-item, a');
 
 window.addEventListener('load', () => {
   const splash = document.getElementById('splash-screen');
-  
   const splashAlreadyPlayed = sessionStorage.getItem('splashPlayed');
 
   if (splashAlreadyPlayed) {
@@ -11,14 +10,14 @@ window.addEventListener('load', () => {
   } else {
     setTimeout(() => {
       splash.style.opacity = '0';
-      splash.style.transition = 'opacity 0.8s ease';
+      splash.style.transition = 'opacity 0.4s ease'; // 
 
       setTimeout(() => {
         splash.style.display = 'none';
         sessionStorage.setItem('splashPlayed', 'true');
-      }, 800); 
+      }, 400); 
       
-    }, 1800); 
+    }, 1200); 
   }
 });
 
