@@ -1,26 +1,6 @@
 const coordsElement = document.getElementById('cursor-coords');
 const contactLinks = document.querySelectorAll('.contacto-item, a');
 
-window.addEventListener('load', () => {
-  const splash = document.getElementById('splash-screen');
-  const splashAlreadyPlayed = sessionStorage.getItem('splashPlayed');
-
-  if (splashAlreadyPlayed) {
-    splash.style.display = 'none';
-  } else {
-    setTimeout(() => {
-      splash.style.opacity = '0';
-      splash.style.transition = 'opacity 0.4s ease'; // 
-
-      setTimeout(() => {
-        splash.style.display = 'none';
-        sessionStorage.setItem('splashPlayed', 'true');
-      }, 400); 
-      
-    }, 1200); 
-  }
-});
-
 
 document.addEventListener('mousemove', (e) => {
     coordsElement.style.display = 'block';

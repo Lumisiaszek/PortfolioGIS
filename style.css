@@ -56,72 +56,6 @@ body {
     flex-direction: column;
 }
 
-#splash-screen {
-    display: none; 
-    position: fixed;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(244, 241, 234, 0.7);
-    backdrop-filter: blur(4px); 
-    -webkit-backdrop-filter: blur(4px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-
-body.show-splash #splash-screen {
-    display: flex; 
-}
-
-.logo-reconstruction {
-  position: relative; 
-  width: 400px;      
-  height: 300px;     
-
-}
-
-.logo-reconstruction img {
-  position: absolute; 
-  opacity: 0; 
-  animation: aparecer 0.8s ease-out forwards;
-}
-
-#letra-G {
-  top: 8%;    
-  left: 5%;    
-  width: 35%;  
-  animation-delay: 0.2s;
-}
-
-#letra-lm {
-  top: 10%;
-  left: 42%;   
-  width: 40%;  
-  animation-delay: 0.4s;
-}
-
-#letra-S {
-  top: 8%;
-  left: 50%;  
-  width: 35%;
-  animation-delay: 0.6s;
-}
-
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 #cursor-coords {
     position: fixed;
@@ -369,6 +303,31 @@ body.show-splash #splash-screen {
 }
 
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aboutmipag {
+    animation: fadeInUp 1.2s ease-out forwards;
+    opacity: 0; 
+}
+
+.aboutmi-izq {
+    animation: fadeInUp 1s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.aboutme-der {
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
 
 
 .proyectospag {
