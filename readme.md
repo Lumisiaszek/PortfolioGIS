@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./assets/img/logo-03.png" alt="Logo GIS LM" width="120">
-  <h2 style="margin-bottom: 0; border-bottom: none;">Portfolio GIS | Lucía Misiaszek</h2>
-  <p style="margin-top: 2px; font-weight: 500; color: #C3ACCF;">Architect & GIS Developer</p>
+  <div style="font-size: 24px; font-weight: bold; margin-top: 10px;">Portfolio GIS | Lucía Misiaszek</div>
+  <div style="font-size: 18px; font-weight: 500; color: #C3ACCF; margin-top: 2px;">Architect & GIS Developer</div>
 </div>
 
 ---
